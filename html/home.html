@@ -1,0 +1,76 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<form id="data">
+  <input type="hidden" name="origen" value="sitio1" readonly="readonly">
+
+  <input type="hidden" name="id" value="123" readonly="readonly">
+
+  <input type="hidden" name="Operation" value="1">
+
+  User Name: <input type="text" name="field1" value="Pedro" require><br>
+  User Surname 1: <input type="text" name="field2" value="Paramo" require><br>
+  User surname 2: <input type="text" name="field3" value="Lopez" require><br><br>
+
+<!--
+  User surname 2: <input type="text" name="extra" value="extra" require><br><br>
+-->
+<!--
+  <input type="file" id="myfile" name="myfile1"><br><br>
+  <input type="file" id="myfile" name="myfile2"><br><br>
+-->
+  <input type="file" id="myfile" name="myfile3"><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+
+
+
+<script type="text/javascript">
+
+var waitingForData = false;
+
+var testList1 = [
+    ["test i", "test ii"],
+    ["test z", "test zz"],
+    ["test e", "test ee"]
+];
+var testList2 = [
+    ["test m", "test mm"],
+    ["test n", "test n"],
+    ["test b", "test bb"]
+];
+
+//Program a custom submit function for the form
+$("form#data").submit(function(event){
+
+    waitingForData = true;
+    //disable the default form submission
+    event.preventDefault();
+
+    //grab all form data
+    var formData = new FormData($(this)[0]);
+    formData.append("list1", JSON.stringify(testList1));
+    formData.append("list2", JSON.stringify(testList2));
+    $.ajax({
+        url: 'login',
+        type: 'POST',
+        data: formData,
+        async: true,
+        cache: false,
+        contentType: false,
+        processData: false, // Important! it prevents JQuery from trying to create a string from the data.
+        success: function (returnedData) {
+            console.log(returnedData);
+            formDataSubmissionHasFinished = false;
+        }
+    });
+    return false;
+});
+
+</script>

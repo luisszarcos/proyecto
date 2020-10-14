@@ -1,0 +1,137 @@
+    <!-- Content -->
+    <br><br><!-- Neutral Space -->
+
+    <!-- Header -->
+    <div class="container-fluid" name="header">
+        <div class="row">
+
+            <!-- Back Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block btn-sm" href="#!VerActividadP"> Regresar </a>
+            </div>
+            <!-- End Back Button -->
+
+            <!-- Page Title -->
+            <div class="col-md-8">
+                <h3 class="text-center text-primary">Calificar</h3>
+            </div>
+            <!-- End Page Title -->
+
+            <!-- Home Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block btn-sm" href="#!index_Profesor"> Inicio </a>
+            </div>
+            <!-- End Home Button -->
+
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Data View -->
+    <div class="container-fluid" name="data_view">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-3"></div><!-- Neutral Space -->
+                    <div class="col-md-6">
+                        <div class="row form-group">
+                            <div class="col-md-9">
+                                <!-- Data -->
+                                <label>Nombre del Alumno:</label>
+                                <input type="text" class="form-control" id="NombreAlumno" value="" readonly>
+                            </div>
+                            <div class="col-md-3">
+                                <!-- Data -->
+                                <label>Fecha de Entrega:</label>
+                                <input type="text" class="form-control" id="FechaSubida" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <label> Archivo Enviado:</label>
+                        <div class="row form-group">
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="NombreArchivo" value="" readonly>
+                            </div>
+                            <div class="col-md-2">
+                                <a id="LinkDescarga"><button type="button" class="btn btn-success btn-block"> Abrir </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div><!-- Neutral Space -->
+                </div>
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+    </div>
+    <!-- End Data View -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Data Inputs -->
+    <div class="container-fluid" name="data_inputs">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <!-- Form -->
+                <form id="Principal">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label>Calificación:</label>
+                            <input type="number" class="form-control" id="" name="Calificacion">
+                        </div>
+                        <div class="col-md-10">
+                            <label>Comentarios:</label>
+                            <input type="text" class="form-control" id="" name="Comentarios">
+                        </div>
+                    </div>
+
+                    <br><!-- Neutral Space -->
+
+                    <!-- Page Buttons -->
+                    <div class="container-fluid" name="page_buttons">
+                        <div class="row">
+                            <div class="col-md-1"></div><!-- Neutral Space -->
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <div class="col-md-4"></div><!-- Neutral Space -->
+                                    <div class="col-md-4">
+                                        <button type="button" class="btn btn-success btn-block"  id="btn_calif"> Guardar Calificacion </button>
+                                    </div>
+                                    <div class="col-md-4"></div><!-- Neutral Space -->
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div><!-- Neutral Space -->
+                        </div>
+                    </div>
+                    <!-- End Page Buttons -->
+
+                    <input type="hidden" id="IdActividad1" name="idActividad">
+                    <input type="hidden" id="IdAlumno1" name="idAlumno">
+                    <input type="hidden" id="Fecha" name="FechaCalificada">
+                    <input type="hidden" id="Operation1" name="Operation">
+
+                </form>
+                <!-- End Form -->
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+
+    </div>
+    <!-- End Data Inputs -->
+
+    <br><br><!-- Neutral Space -->
+    <!-- End Content -->
+
+    <!-- Hiiden Forms -->
+    <div class="d-none">
+        <!-- 9 -->
+        <form id="Oculto">
+            <input type="hidden" id="IdActividad" name="idActividad">
+            <input type="hidden" id="IdAlumno" name="idAlumno">
+            <input type="hidden" id="Operation" name="Operation">
+        </form>
+    </div>
+    <!-- End Hiiden Forms -->

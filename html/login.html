@@ -1,0 +1,162 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<form id="data">
+
+  <input type="hidden" name="Operation" value="1">
+
+  Correo: <input type="text" name="Correo" value="luisarcos@correo.uaa.mx" require><br>
+
+  Contraseña: <input type="text" name="Contrasena" value="hola1234" require><br><br>
+
+  <input type="radio" id="administrador" name="TipoUsuario" value="administrador" checked>
+  <label for="adm">administrador</label><br>
+  <input type="radio" id="profesor" name="TipoUsuario" value="profesor">
+  <label for="teach">profesor</label><br>
+  <input type="radio" id="alumno" name="TipoUsuario" value="alumno">
+  <label for="student">alumno</label><br>
+  <input type="radio" id="registrador" name="TipoUsuario" value="registrador">
+  <label for="student">registrador</label><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+<br><br><br>
+
+<br><br><br>
+
+<form id="masterTest">
+<!--
+    <input type="file" id="myfile" name="myfile1"><br><br>
+-->
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+
+
+<script type="text/javascript">
+
+var waitingForData = false;
+
+$("form#masterTest").submit(function(event){
+
+    waitingForData = true;
+    //disable the default form submission
+    event.preventDefault();
+
+    //grab all form data
+    var formData = new FormData($(this)[0]);
+
+    // call alumno7('3AS001','2','2020-06-17','EXE','Otro Virus',null);
+    // call alumno2('4AS001');
+
+    //formData.append('Operation','34');
+    //formData.append('idAdmin','1AS001');
+
+    //formData.append('Operation','2');
+    //formData.append('idAlumno','4AS001');
+
+    /*
+    formData.append('Operation','33');
+    formData.append('Nombres','Edgar Roberto');
+    formData.append('Apellidos','Sotelo Arceo');
+    formData.append('Telefono','4491234569');
+    formData.append('Correo','edgar@gmail.com');
+    formData.append('Contrasena','root1234');
+    formData.append('Estado','A');
+    formData.append('idAdmin','1AS001');
+    */
+
+
+    //formData.append('Operation','38');
+    //formData.append('Nombre','test dos');
+
+    
+    formData.append('Operation','20');
+    formData.append('idAlumno','3AS001');
+    formData.append('idTema','11');
+    formData.append('FechaSolicitud','2020-06-18');
+    formData.append('idDestino','sitio2');
+    
+
+    /*
+    formData.append('idAlumno',  '2AS001');
+    formData.append('Telefono',  '1231231234');
+    formData.append('Contrasena','4321aloh');
+    */
+
+    /*
+    formData.append('idActividad','2');
+    formData.append('FechaSubida','2020-06-17');
+    */
+    $.ajax({
+        url: 'alumno',
+        type: 'POST',
+        data: formData,
+        async: true,
+        cache: false,
+        contentType: false,
+        processData: false, // Important! it prevents JQuery from trying to create a string from the data.
+        success: function (returnedData) {
+            console.log(returnedData);
+            formDataSubmissionHasFinished = false;
+        }
+    });
+    return false;
+});
+
+$("form#fingerprintTest").submit(function(event){
+
+    waitingForData = true;
+    //disable the default form submission
+    event.preventDefault();
+
+    //grab all form data
+    var formData = new FormData($(this)[0]);
+    formData.append('idPosgrado','8AS001');
+    $.ajax({
+        url: 'alumno',
+        type: 'POST',
+        data: formData,
+        async: true,
+        cache: false,
+        contentType: false,
+        processData: false, // Important! it prevents JQuery from trying to create a string from the data.
+        success: function (returnedData) {
+            console.log(returnedData);
+            formDataSubmissionHasFinished = false;
+        }
+    });
+    return false;
+});
+
+//Program a custom submit function for the form
+$("form#data").submit(function(event){
+
+    waitingForData = true;
+    //disable the default form submission
+    event.preventDefault();
+
+    //grab all form data
+    var formData = new FormData($(this)[0]);
+    $.ajax({
+        url: 'login',
+        type: 'POST',
+        data: formData,
+        async: true,
+        cache: false,
+        contentType: false,
+        processData: false, // Important! it prevents JQuery from trying to create a string from the data.
+        success: function (returnedData) {
+            console.log(returnedData);
+            formDataSubmissionHasFinished = false;
+        }
+    });
+    return false;
+});
+
+</script>

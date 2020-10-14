@@ -1,0 +1,197 @@
+    <!-- Content -->
+    <br><br><!-- Neutral Space -->
+
+    <!-- Header -->
+    <div class="container-fluid" name="header">
+        <div class="row">
+
+            <!-- Back Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block btn-sm" href="#!DetallesPosgrado"> Regresar </a>
+            </div>
+            <!-- End Back Button -->
+
+            <!-- Page Title -->
+            <div class="col-md-8">
+                <h3 class="text-center text-primary"> Nueva Línea de Investigación</h3>
+            </div>
+            <!-- End Page Title -->
+
+            <!-- Home Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-sm btn-block" href="#!index_admin"> Inicio </a>
+            </div>
+            <!-- End Home Button -->
+
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Data Inputs -->
+    <div class="container-fluid" name="data_inputs">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <!-- Form -->
+                <form id="Principal">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- Input 1-->
+                            <div class="form-group">
+                                <span> Nombre: </span>
+                                <input type="text" class="form-control" name="Nombre">
+                            </div>
+                            <!-- Input 2-->
+                            <div class="form-group">
+                                <span> Clave: </span>
+                                <input type="text" class="form-control" name="Clave">
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div><!-- Neutral Space -->
+                        <div class="col-md-4"></div><!-- Neutral Space -->
+                    </div>
+                    <input type="hidden" id="IdPosgrado" name="idPosgrado">
+                    <input type="hidden" id="IdAdmin" name="idAdmin">
+                    <input type="hidden" id="Estado1" name="Estado">
+                    <input type="hidden" id="OperationP" name="Operation">
+                </form>
+                <!-- End Form -->
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+    </div>
+    <!-- End Data Inputs -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Data Inputs & Views -->
+    <div class="container-fluid" name="data_inputs_view_1">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <div class="row">
+                    <!-- Form & Data list View -->
+                    <div class="col-md-6">
+                        Profesores Disponibles:
+                        <form Id="">
+
+                            <!-- Lista Resultados -->
+                            <div id="ListaProfesores" class="form-group">
+
+                                <!-- Elemento Lista -->
+
+                            </div>
+                            <!-- End Lista Resultados -->
+
+                        </form>
+                    </div>
+                    <!-- End Form & Data List View -->
+
+                    <!-- Data View -->
+                    <div class="col-md-6">
+                        Detalles del profesor:
+                        <!-- Resultados Fijos -->
+                        <div id="resultados2" class="form-group">
+                            <div class="row form-group">
+                                <!-- Data -->
+                                <div class="col-md-12">
+                                    <span>Nombre:</span>
+                                    <input type="text" class="form-control" id="NombreProfesor" value="" readonly>
+                                </div>
+                                <!-- Data -->
+                                <div class="col-md-12">
+                                    <span>Posgrado:</span>
+                                    <input type="text" class="form-control" id="PosgradoProfesor" value="" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fin Resultados Fijos -->
+                    </div>
+                    <!-- End Data View -->
+                </div>
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+    </div>
+    <!-- End Data Inputs & Views -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Data Inputs & Views -->
+    <div class="container-fluid" name="data_inputs_view_2">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-5">
+                        Nuevo Tema:
+                        <!-- Input 2-->
+                        <div class="form-group">
+                            <span> Nombre: </span>
+                            <input type="text" class="form-control" id="NombreTema">
+                        </div>
+                        <!-- Input 3-->
+                        <div class="form-group">
+                            <span> Clave: </span>
+                            <input type="text" class="form-control" id="ClaveT">
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block" id="btnAddTema"> Agregar Tema </button>
+                    </div>
+                    <div class="col-md-1"></div><!-- Neutral Space -->
+                    <div class="col-md-6">
+                        Temas:
+                        <div id="ListaTema" class="form-group">
+
+                            <!-- Elemento Lista -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+    </div>
+    <!-- End Data Inputs & Views -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Page Buttons -->
+    <div class="container-fluid" name="page_buttons">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-5"></div><!-- Neutral Space -->
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-success btn-block" id="Guardar"> Guardar </button>
+                    </div>
+                    <div class="col-md-5"></div><!-- Neutral Space -->
+                </div>
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+    </div>
+    <!-- End Page Buttons -->
+
+    <br><br><!-- Neutral Space -->
+    <!-- End Content -->
+
+
+    <!-- Hiiden Forms -->
+    <div class="d-none">
+        <form id="Oculto">
+            <input type="hidden" id="IdAreaO" name="idArea">
+            <input type="hidden" id="OperationO" name="Operation">
+        </form>
+        <form id="Oculto3">
+            <input type="hidden" id="IdLineaO" name="idLinea">
+            <input type="hidden" id="OperationO1" name="Operation">
+        </form>
+        <form id="Oculto2">
+            <input type="hidden" id="IdProfesorOculto" name="idProfesor">
+            <input type="hidden" id="Operation" name="Operation">
+        </form>
+    </div>
+    <!-- End Hiiden Forms -->

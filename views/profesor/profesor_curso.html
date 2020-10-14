@@ -1,0 +1,144 @@
+    <!-- Content -->
+    <br><br><!-- Neutral Space -->
+
+    <!-- Header -->
+    <div class="container-fluid" name="header">
+        <div class="row">
+
+            <!-- Back Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block btn-sm" href="#!index_Profesor"> Regresar </a>
+            </div>
+            <!-- End Back Button -->
+
+            <!-- Page Title -->
+            <div class="col-md-8">
+            </div>
+            <!-- End Page Title -->
+
+            <!-- Home Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block btn-sm" href="#!index_Profesor"> Inicio </a>
+            </div>
+            <!-- End Home Button -->
+
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Data View -->
+    <div class="container-fluid" name="data_view">
+        <div class="row">
+            <!-- Resultados -->
+            <div class="col-md-12">
+                <h3 class="text-center text-primary">
+                    <!-- Data -->
+                    <input type="text" class="border-0" id="PosgradoName" value="" readonly> >
+                    <input type="text" class="border-0" id="NombreLinea" value="" readonly> >
+                    <input type="text" class="border-0" id="NombreTema" value="" readonly> > Grupo:
+                    <input type="text" class="border-0" id="Grupo" value="" readonly>
+
+                </h3>
+            </div>
+            <!-- End Resultados -->
+        </div>
+    </div>
+    <!-- End Data View -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Data View -->
+    <div class="container-fluid" name="data_view">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <label>Fecha Inicio:</label>
+                <input type="text" class="form-control" id="FechaInicio"value="" readonly></div>
+            <div class="col-md-2">
+                <label>Fecha Fin:</label>
+                <input type="text" class="form-control" id="FechaFin" value="" readonly>
+            </div>
+            <div class="col-md-2">
+                <label>Cupo:</label>
+                <input type="text" class="form-control" id="Cupo" value="" readonly>
+            </div>
+            <div class="col-md-2">
+                <label>Alumnos Inscritos:</label>
+                <input type="text" class="form-control" id="NuemeroAlumnosInscritos" value="" readonly>
+            </div>
+            <div class="col-md-2">
+                <label>Estado:</label>
+                <input type="text" class="form-control" id="EstadoGrupo" value="" readonly>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        <br><!-- Neutral Space -->
+
+        <div class="row">
+            <div class="col-md-8">
+                <h4 class="text-center">Actividades y Recursos</h4>
+                <br><!-- Neutral Space -->
+                <!-- Lista Resultados Actividad-->
+                <div id="DivResultados" class="form-group">
+
+                    <!-- Elemento Lista -->
+
+                </div>
+                <!-- End Lista Resultados -->
+
+            </div>
+            <div class="col-md-4">
+                <label>Lista de Alumnos:</label>
+                <!-- Lista Resultados -->
+                <div id="resultados3" class="form-group">
+
+                    <!-- Elemento Lista -->
+
+                </div>
+                <!-- End Lista Resultados -->
+            </div>
+        </div>
+    </div>
+    <!-- End Data View -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Page Buttons -->
+    <div class="container-fluid" name="page_buttons">
+        <div class="row">
+            <div class="col-md-3">
+                <a class="btn btn-success btn-block btn-sm" href="#!AgregarActividad"> Añadir Actividad </a>
+            </div>
+            <div class="col-md-3">
+                <a class="btn btn-success btn-block btn-sm" href="#!AgregarRecurso"> Añadir Recurso </a>
+            </div>
+            <div class="col-md-3">
+                <a class="btn btn-success btn-block btn-sm" href="#!FinCurso"> Finalizar Curso </a>
+            </div>
+            <div class="col-md-3">
+                <a class="btn btn-success btn-block btn-sm" href="#!ForoP"> Ir al Foro </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Buttons -->
+
+    <br><br><!-- Neutral Space -->
+    <!-- End Content -->
+
+    <!-- Hiiden Forms -->
+    <div class="d-none">
+        <!-- 5_1, 5_2, 5_3, 5_4 -->
+        <form id="Oculto">
+            <input type="hidden" id="IdCurso" name="idCurso">
+            <input type="hidden" id="Operation" name="Operation">
+        </form>
+        <!-- 7 -->
+        <form id="Oculto1">
+            <input type="hidden" id="IdRecursoO" name="idRecurso">
+            <input type="hidden" id="Operation2" name="Operation">
+        </form>
+    </div>
+    <!-- End Hiiden Forms -->

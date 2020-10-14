@@ -1,0 +1,143 @@
+    <!-- Content -->
+    <br><br><!-- Neutral Space -->
+
+    <!-- Header -->
+    <div class="container-fluid" name="header">
+        <div class="row">
+
+            <!-- Back Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block btn-sm" href="#!SolicitudIngreso1"> Regresar </a>
+            </div>
+            <!-- End Back Button -->
+
+            <!-- Page Title -->
+            <div class="col-md-8">
+                <h3 class="text-center text-primary"> Solicitud de Ingreso</h3>
+            </div>
+            <!-- End Page Title -->
+
+            <!-- Home Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block btn-sm" href="#!index_Alumno"> Inicio </a>
+            </div>
+            <!-- End Home Button -->
+
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Data View -->
+    <div class="container-fluid" name="data_view">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="text-center "> Datos del Alumno</h4>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-6">
+                                <label>Nombre:</label>
+                                <input type="text" class="form-control" id="NombresAlumno" value="" readonly>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Apellidos:</label>
+                                <input type="text" class="form-control" id="ApellidosAlumno" name="" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-6">
+                                <label>Universidad:</label>
+                                <input type="text" class="form-control" id="UnviversidadAlumno" value="" readonly>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Área de Conocimiento:</label>
+                                <input type="text" class="form-control" id="AreaConocimientoAlumno" value="" readonly>
+                            </div>
+                        </div>
+                        <br><!-- Neutral Space -->
+                        <h4 class="text-center "> Datos del Posgrado</h4>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-6">
+                                <label>Universidad:</label>
+                                <input type="text" class="form-control" id="UnviversidadSeleccionada" value="" readonly>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Posgrado:</label>
+                                <input type="text" class="form-control" id="PosgradoSeleccionado" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-6">
+                                <label>Linea de Investigación:</label>
+                                <input type="text" class="form-control" id="LineaInvestigacionSeleccionada" value="" readonly>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Tema:</label>
+                                <input type="text" class="form-control" id="TemaSeleccionado" value="" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12"></div><!-- Neutral Space -->
+                </div>
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+    </div>
+    <!-- End Data View -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Page Buttons -->
+    <div class="container-fluid" name="page_buttons">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-4"></div><!-- Neutral Space -->
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-success btn-block" id="BtnEnviarSolicitud"> Enviar Solicitud</button>
+                    </div>
+                    <div class="col-md-4"></div><!-- Neutral Space -->
+                </div>
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+    </div>
+    <!-- End Page Buttons -->
+
+    <br><br><!-- Neutral Space -->
+    <!-- End Content -->
+
+    <!-- Hiiden Forms -->
+    <div class="d-none">
+        <!-- 19_1 -->
+        <form id="Oculto">
+            <input type="hidden" id="IdAlumno" name="idAlumno">
+            <input type="hidden" id="Operation" name="Operation">
+        </form>
+        <!-- 19_2 -->
+        <form id="Oculto1">
+            <input type="hidden" id="IdLinea" name="idLinea">
+            <input type="hidden" id="IdTema" name="idTema">
+            <input type="hidden" id="IdUniversidad" name="idUniversidad">
+            <input type="hidden" id="IdPosgrado" name="idPosgrado">
+            
+            <input type="hidden" id="Operation1" name="Operation">
+        </form>
+        <!-- 34 -->
+        <form id="Oculto2">
+            <input type="hidden" id="FechaSolicitud" name="FechaSolicitud">
+            <input type="hidden" id="IdTemaSeleccionado" name="idTema">
+            <input type="hidden" id="IdSitio2" name="idDestino">
+            <input type="hidden" id="IdAlumno1" name="idAlumno">
+            <input type="hidden" id="Operation2" name="Operation">
+        </form>
+    </div>
+    <!-- End Hiiden Forms -->

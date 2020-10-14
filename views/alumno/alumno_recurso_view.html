@@ -1,0 +1,84 @@
+    <!-- Content -->
+    <br><br><!-- Neutral Space -->
+
+    <!-- Header -->
+    <div class="container-fluid" name="header">
+        <div class="row">
+
+            <!-- Back Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block btn-sm" href="#!index_Alumno"> Regresar </a>
+            </div>
+            <!-- End Back Button -->
+
+            <!-- Page Title -->
+            <div class="col-md-8">
+                <h3 class="text-center text-primary"> Recurso </h3>
+            </div>
+            <!-- End Page Title -->
+
+            <!-- Home Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block btn-sm" href="#!index_Alumno"> Inicio </a>
+            </div>
+            <!-- End Home Button -->
+
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Data View -->
+    <div class="container-fluid" name="data_view">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Data -->
+                        <object id="IframeRecurso" type="application/pdf" width="100%" height="100%" class="w-100 h-100" data="">
+                            <!-- Edit "data" tag whit pdf source rute-->
+                            <p>Alternative text - include a link <a href="" id="">to the PDF!</a></p><!-- Edit "href" tag whit the same pdf source rute-->
+                        </object>
+                    </div>
+                    <div class="col-md-12">
+                        <!-- Data -->
+                        <label>Descripción:</label>
+                        <input type="text" class="form-control" id="Descripcion" value="No se proporciono descripción." readonly>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+    </div>
+    <!-- End Data View -->
+    
+    <br><!-- Neutral Space -->
+
+    <!-- Page Buttons -->
+    <div class="container-fluid" name="page_buttons">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <a id="doc_link" href="" download=""><button type="button" class="btn btn-success btn-block btn-sm">Ver Recurso</button></a>
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+    </div>
+    <!-- End Page Buttons -->
+
+    <br><br><!-- Neutral Space -->
+    <!-- End Content -->
+
+<!-- Hiiden Forms -->
+    <div class="d-none">
+	<!-- 5 -->
+        <form id="Oculto">
+            <input type="hidden" id="IdCurso" name="">
+            <input type="hidden" id="IRecurso" name="idRecurso">
+         
+            <input type="hidden" id="Operation" name="Operation">
+        </form>
+    </div>
+    <!-- End Hiiden Forms -->

@@ -1,0 +1,128 @@
+    <!-- Content -->
+    <br><br><!-- Neutral Space -->
+
+    <!-- Header -->
+    <div class="container-fluid" name="header">
+        <div class="row">
+
+            <!-- Back Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block btn-sm" href="#!VerTema"> Regresar </a>
+            </div>
+            <!-- End Back Button -->
+
+            <!-- Page Title -->
+            <div class="col-md-8">
+                <h3 class="text-center text-primary"> Grupo</h3>
+            </div>
+            <!-- End Page Title -->
+
+            <!-- Home Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-sm btn-block" href="#!index_admin"> Inicio </a>
+            </div>
+            <!-- End Home Button -->
+
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Data View -->
+    <div class="container-fluid" name="data_view">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-12">
+                        Detalles del grupo:
+                        <!-- Resultados -->
+                        <div class="row form-group">
+                            <!-- Data -->
+                            <div class="col-md-4">
+                                <span>Letra:</span>
+                                <input type="text" class="form-control" id="Grupo" value="" readonly>
+                            </div>
+                            <!-- Data -->
+                            <div class="col-md-4">
+                                <span>Cupo:</span>
+                                <input type="text" class="form-control" id="Cupo" value="" readonly>
+                            </div>
+                            <!-- Data -->
+                            <div class="col-md-4">
+                                <span>Alumnos Inscritos:</span>
+                                <input type="text" class="form-control" id="NumeroAlumnosInscritos" value="" readonly>
+                            </div>
+                            <!-- Data -->
+                            <div class="col-md-9">
+                                <span>Profesor Asignado:</span>
+                                <input type="text" class="form-control" id="NombreProfesor" value="" readonly>
+                            </div>
+                            <!-- Data -->
+                            <div class="col-md-3">
+                                <span>Estado:</span>
+                                <input type="text" class="form-control" id="Estado" value="" readonly>
+                            </div>
+                            <!-- Data -->
+                            <div class="col-md-6">
+                                <span>Fecha Inicio:</span>
+                                <input type="text" class="form-control" id="FechaInicio" value="" readonly>
+                            </div>
+                            <!-- Data -->
+                            <div class="col-md-6">
+                                <span>Fecha Fin:</span>
+                                <input type="text" class="form-control" id="FechaFin" value="" readonly>
+                            </div>
+
+
+                        </div>
+                        <!-- End Resultados -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+    </div>
+    <!-- End Data View -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Page Buttons -->
+    <div class="container-fluid" name="page_buttons">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-success btn-block" id="btnHabilitarDes"> Deshabiliar Grupo </button>
+                    </div>
+                    <div class="col-md-4"></div><!-- Neutral Space -->
+                    <div class="col-md-4">
+                        <a href="#!EditarGrupo"><button type="button" class="btn btn-success btn-block" id="BtnEditarGrupo"> Editar Grupo </button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+    </div>
+    <!-- End Page Buttons -->
+
+    <br><br><!-- Neutral Space -->
+    <!-- End Content -->
+
+
+    <!-- Hiiden Forms -->
+    <div class="d-none">
+        <form id="Oculto">
+            <input type="hidden" id="IdAdminO" name="idAdmin">
+            <input type="hidden" id="IdTemaImpartidoO" name="idTemaImpartido">
+            <input type="hidden" id="Operation" name="Operation">
+            
+        </form>
+        <form id="Oculto1">
+            <input type="hidden" id="IdTemaImpartidoO1" name="idTemaImpartido">
+            <input type="hidden" id="Operation1" name="Operation">
+        </form>
+    </div>
+    <!-- End Hiiden Forms -->

@@ -1,0 +1,136 @@
+    <!-- Content -->
+    <br><br><!-- Neutral Space -->
+
+    <!-- Header -->
+    <div class="container-fluid" name="header">
+        <div class="row">
+
+            <!-- Back Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block btn-sm" href="#!posgrado"> Regresar </a>
+            </div>
+            <!-- End Back Button -->
+
+            <!-- Page Title -->
+            <div class="col-md-8">
+                <h3 class="text-center text-primary"> Nuevo Posgrado</h3>
+            </div>
+            <!-- End Page Title -->
+
+            <!-- Home Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-sm btn-block" href="#!index_admin"> Inicio </a>
+            </div>
+            <!-- End Home Button -->
+
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Data Inputs -->
+    <div class="container-fluid" name="data_inputs">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <!-- Form -->
+                <form id="NuevoP">
+                    <div class="row">
+                        <div class="col-md-3"></div> <!-- Neutral Space -->
+
+                        <!-- Inputs -->
+                        <div class="col-md-6">
+
+                            <!-- Input 1-->
+                            Area de Conocimiento:
+                            <div class="form-group">
+                                <select name="idArea" id="SelectArea" class="form-control">
+                                    <option value=null>Seleccione...</option>
+                                </select>
+                            </div>
+
+                            <!-- Input 2-->
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"> Nombre: </label>
+                                <input type="email" class="form-control" name="Nombre">
+                            </div>
+
+                            <!-- Input 3-->
+                            <div class="form-group">
+                                <label for="exampleInputPassword1"> Clave: </label>
+                                <input type="text" class="form-control" name="Clave">
+                            </div>
+
+                            <!-- Input 4-->
+                            Nivel:
+                            <div class="form-group col-md-12 d-flex">
+                                <div class="col-md-6 d-flex justify-content-center align-items-baseline">
+                                    <input type="radio" name="Nivel" value="M">
+                                    <span>Maestría</span>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-center align-items-baseline">
+                                    <input type="radio" name="Nivel" value="D">
+                                    <span>Doctorado</span>
+                                </div>
+                            </div>
+
+                            <!-- Input 5-->
+                            <div class="form-group">
+                                <label for="exampleInputFile"> Convocatoria: </label>
+                                <input type="file" class="form-control-file" name="Convocatoria">
+                                <p class="help-block"> Solo archivos PDF (.pdf). </p>
+                            </div>
+
+                        </div>
+                        <!-- End Inputs-->
+                        <div class="col-md-3"></div><!-- Neutral Space -->
+                    </div>
+                    <!-- End Data Form -->
+
+                    <!-- Page Buttons -->
+                    <div class="container-fluid" name="page_buttons">
+                        <div class="row">
+                            <div class="col-md-1"></div><!-- Neutral Space -->
+                            <div class="col-md-10">
+                                <!-- Submit Button -->
+                                <div class="row">
+                                    <div class="col-md-5"></div><!-- Neutral Space -->
+                                    <div class="col-md-2">
+                                        <button type="submit" class="btn btn-success btn-block" id="Guardar">Finalizar</button><!-- Submit Button -->
+                                    </div>
+                                    <div class="col-md-5"></div><!-- Neutral Space -->
+                                </div>
+                                <!-- End Submit Button -->
+                            </div>
+                            <div class="col-md-1"></div><!-- Neutral Space -->
+                        </div>
+                    </div>
+                    <!-- End Page Buttons -->
+                    
+                    <input type="hidden" id="IdAdminPrincipal" name="idAdmin">
+                    <input type="hidden" id="Estado" name="Estado">
+                    <input type="hidden" id="Fecha" name="Fecha">
+                    <input type="hidden" id="OperationPrincipal" name="Operation">
+
+                </form>
+                <!-- End Form -->
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+
+    </div>
+    <!-- End Data Inputs -->
+
+    <br><br><!-- Neutral Space -->
+    <!-- End Content -->
+
+
+<!-- Hiiden Forms -->
+    <div class="d-none">
+        <form id="Oculto">
+            <input type="hidden" id="IdAdmin" name="idAdmin">
+            <input type="hidden" id="Operation" name="Operation">
+        </form>
+    </div>
+    <!-- End Hiiden Forms -->

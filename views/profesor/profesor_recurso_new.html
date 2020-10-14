@@ -1,0 +1,103 @@
+    <!-- Content -->
+    <br><br><!-- Neutral Space -->
+
+    <!-- Header -->
+    <div class="container-fluid" name="header">
+        <div class="row">
+
+            <!-- Back Button -->
+            <div class="col-md-2">
+               <a href="#!VerCurso"> <button type="button" class="btn btn-success btn-block btn-sm"> Regresar </button></a>
+            </div>
+            <!-- End Back Button -->
+
+            <!-- Page Title -->
+            <div class="col-md-8">
+                <h3 class="text-center text-primary"> Nuevo Recurso</h3>
+            </div>
+            <!-- End Page Title -->
+
+            <!-- Home Button -->
+            <div class="col-md-2">
+                <a href="#!index_Profesor"> <button type="button" class="btn btn-success btn-sm btn-block"> Inicio </button></a>
+            </div>
+            <!-- End Home Button -->
+
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Data Inputs -->
+    <div class="container-fluid" name="data_inputs">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <!-- Form Op 13 -->
+                <form id="Principal">
+                    <div class="row form-group">
+                        <div class="col-md-3"></div><!-- Neutral Space -->
+                        <div class="col-md-6">
+                            <!-- Input 1-->
+                            <label>Nombre:</label>
+                            <input type="text" class="form-control" name="NombreRecurso">
+                        </div>
+                        <div class="col-md-3"></div><!-- Neutral Space -->
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-3"></div><!-- Neutral Space -->
+                        <div class="col-md-6">
+                            <!-- Input 2 -->
+                            <label for="exampleInputFile"> Archivo: </label>
+                            <input type="file" class="form-control-file" name="Contenido">
+                        </div>
+                        <div class="col-md-3"></div><!-- Neutral Space -->
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-2 d-flex justify-content-end">
+                            <label>Descripción:</label>
+                        </div>
+                        <div class="col-md-10">
+                            <!-- Input 3-->
+                            <input type="text" class="form-control" name="Descripcion">
+                        </div>
+                    </div>
+
+                    <br><!-- Neutral Space -->
+
+                    <!-- Page Buttons -->
+                    <div class="container-fluid" name="page_buttons">
+                        <div class="row">
+                            <div class="col-md-1"></div><!-- Neutral Space -->
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <div class="col-md-5"></div><!-- Neutral Space -->
+                                    <div class="col-md-2">
+                                        <button type="button" class="btn btn-success btn-block" id="BtnSubir"> Agregar </button>
+                                    </div>
+                                    <div class="col-md-5"></div><!-- Neutral Space -->
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div><!-- Neutral Space -->
+                        </div>
+                    </div>
+                    <!-- End Page Buttons -->
+
+                    <input type="hidden" id="IdCurso" name="idCurso">
+                    <input type="hidden" id="Fecha" name="Fecha">
+                    <input type="hidden" id="Operation" name="Operation">
+
+                </form>
+                <!-- End Form -->
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+
+    </div>
+    <!-- End Data Inputs -->
+
+    <br><br><!-- Neutral Space -->
+    <!-- End Content -->

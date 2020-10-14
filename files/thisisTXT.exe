@@ -1,0 +1,2 @@
+check mime type in inputParsing.
+check the cookies (and use a hashing function with them to save the user id).

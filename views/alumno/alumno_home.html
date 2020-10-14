@@ -1,0 +1,190 @@
+    <!-- Content -->
+    <br><br><!-- Neutral Space -->
+
+    <div class="container-fluid" name="data_inputs">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="alumno/alumno_home.html#home" id="PosgradoTab">Posgrado</a></li>
+            <li><a data-toggle="tab" href="alumno/alumno_home.html#menu1" id="BusquedaTab">Búsqueda</a></li>
+            <li><a data-toggle="tab" href="alumno/alumno_home.html#menu2" id="SolicitudesTab">Solicitudes</a></li>
+        </ul>
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <div class="tab-content">
+                    <!-- Posgrado Page -->
+                    <div id="home" class="tab-pane fade in active">
+                        <!-- Data View -->
+                        <div class="container-fluid" name="data_view">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="text-center text-primary">
+                                        <!-- Data -->
+                                        <input type="text" class="border-0" id="PosgradoNombre" value="" readonly> >
+                                        <input type="text" class="border-0" id="NombreLinea" value="" readonly> >
+                                        <input type="text" class="border-0" id="NombreTema" value="" readonly> > Grupo: 
+                                        <input type="text" class="border-0" id="Grupo" value="" readonly>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Data View -->
+
+                        <br><!-- Neutral Space -->
+
+                        <!-- Data View -->
+                        <div class="container-fluid" name="data_view">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h4 class="text-center">Actividades y Recursos</h4>
+                                    <br><!-- Neutral Space -->
+                                    <!-- Lista Resultados -->
+                                    <div id="DivResultados" class="form-group">
+
+                                        <!-- Elemento Lista -->
+
+                                    </div>
+                                    <!-- End Lista Resultados -->
+                                </div>
+                                <div class="col-md-4">
+                                    <label>Profesor:</label>
+                                    <input type="text" class="form-control" id="NombreProfesor" value="" readonly>
+                                    <br>
+                                    <label>Alumnos:</label>
+                                    <!-- Lista Resultados -->
+                                    <div id="resultados3" class="form-group">
+
+                                        <!-- Elemento Lista -->
+
+                                    </div>
+                                    <!-- End Lista Resultados -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Data View -->
+
+                        <br><!-- Neutral Space -->
+
+                        <!-- Page Buttons -->
+                        <div class="container-fluid" id="page_buttons">
+                            <div class="row">
+                                <div class="col-md-5"></div><!-- Neutral Space -->
+                                <div class="col-md-2">
+                                    <a class="btn btn-success btn-block" href="#!ForoA">Ir al Foro</a>
+                                </div>
+                                <div class="col-md-5"></div><!-- Neutral Space -->
+                            </div>
+                        </div>
+                        <!-- End Page Buttons -->
+
+                    </div>
+                    <!-- End Posgrado Page -->
+                    
+                    <!-- Busqueda Page -->
+                    <div id="menu1" class="tab-pane fade">
+                        <br><!-- Neutral Space -->
+                        <!-- Data Inputs -->
+                        <div class="container-fluid" name="data_inputs">
+                            <!-- Form Op 15-->
+                            <form id="Principal">
+                                <!-- Inputs -->
+                                <div class="row">
+                                    <div class="col-md-4"></div>
+                                    <!-- Input 1 -->
+                                    <div class="col-md-4">
+                                        Universidad:
+                                        <div class="form-group">
+                                            <!-- Resultados -->
+                                            <select id="SelectUniversidad" class="form-control" name="idUniversidad">
+                                                <option value="">Seleccione...</option>
+                                            </select>
+                                            <!-- End Resultados -->
+                                            <br>
+                                            <button type="submit" class="btn btn-success btn-block" id="BtnBuscar"> Buscar </button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4"></div>
+                                </div>
+                                <!-- End Inputs -->
+                                <input type="hidden" id="IdAlumnoP" name="idAlumno">
+                                <input type="hidden" id="OperationP" name="Operation">
+                            </form>
+                            <!-- End Form -->
+                        </div>
+                        <!-- End Data Inputs -->
+
+                        <br><!-- Neutral Space -->
+
+                        <!-- Data View -->
+                        <div class="container-fluid" name="data_view">
+                            <label>Posgrados Disponibles:</label>
+                            <br><!-- Neutral Space -->
+                            <!-- Lista Resultados -->
+                            <div id="DivResultados1" class="form-group">
+
+                                <!-- Elemento Lista -->
+
+                            </div>
+                            <!-- End Lista Resultados -->
+                        </div>
+                        <!-- End Data View -->
+
+                    </div>
+                    <!-- End Busqueda Page -->
+                    
+                    <!-- Solicitudes Page -->
+                    <div id="menu2" class="tab-pane fade">
+                        <br><!-- Neutral Space -->
+                        <!-- Data View -->
+                        <div class="container-fluid" name="data_view">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <br><!-- Neutral Space -->
+                                    <h3 class="text-center"> Pendientes </h3>
+                                    <!-- Lista Resultados -->
+                                    <div id="DivResultadosS1" class="form-group">
+                                        
+                                        
+
+                                    </div>
+                                    <!-- End Lista Resultados -->
+                                </div>
+                                <br><!-- Neutral Space -->
+                                <div class="col-md-12">
+                                    <br><!-- Neutral Space -->
+                                    <h3 class="text-center"> Respondidas </h3>
+                                    <!-- Lista Resultados -->
+                                    <div id="DivResultadosS2" class="form-group">
+                                        
+                                        
+
+                                    </div>
+                                    <!-- End Lista Resultados -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Data View -->
+
+                    </div>
+                    <!-- End Solicitudes Page -->
+                </div>
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+    </div>
+
+    <br><br><!-- Neutral Space -->
+    <!-- End Content -->
+
+    <!-- Hiiden Forms -->
+    <div class="d-none">
+        <!-- 1_1, 1_2, 1_3, 1_4, 21 -->
+        <form id="Oculto">
+            <input type="hidden" id="IdAlumnoO" name="idAlumno">
+            <input type="hidden" id="Operacion" name="Operation">
+        </form>
+        <!-- 14 -->
+        <form id="Oculto1">
+            <input type="hidden" id="Operation1" name="Operation">
+        </form>
+    </div>
+    <!-- End Hiiden Forms -->

@@ -1,0 +1,188 @@
+    <!-- Content -->
+    <br><br><!-- Neutral Space -->
+
+    <!-- Header -->
+    <div class="container-fluid" name="header">
+        <div class="row">
+
+            <!-- Back Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-block btn-sm" href="#!index_Alumno"> Regresar </a>
+            </div>
+            <!-- End Back Button -->
+
+            <!-- Page Title -->
+            <div class="col-md-8">
+                <h3 class="text-center text-primary"> Mi Perfil</h3>
+            </div>
+            <!-- End Page Title -->
+
+            <!-- Home Button -->
+            <div class="col-md-2">
+                <a class="btn btn-success btn-sm btn-block" href="#!index_Alumno"> Inicio </a>
+            </div>
+            <!-- End Home Button -->
+
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <br><!-- Neutral Space -->
+
+    <!-- Data View -->
+    <div class="container-fluid" name="data_view">
+        <div class="row">
+            <div class="col-md-1"></div><!-- Neutral Space -->
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-2"></div><!-- Neutral Space -->
+                    <div class="col-md-8">
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label>Nombre:</label>
+                                <input type="text" class="form-control" id="NombreAlumno" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label>Apellidos</label>
+                                <input type="text" class="form-control" id="ApellidosAlumno" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label>Correo:</label>
+                                <input type="text" class="form-control" id="Correo" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label>Fecha de Nacimiento:</label>
+                                <input type="text" class="form-control" id="FechaNacimiento" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label>Género:</label>
+                                <input type="text" class="form-control" id="Genero" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label>Dirección:</label>
+                                <input type="text" class="form-control" id="Direccion" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label>Entidad Federativa:</label>
+                                <input type="text" class="form-control" id="EntidadFederativa" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label>Ciudad:</label>
+                                <input type="text" class="form-control" id="Ciudad" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label>Télefono:</label>
+                                <input type="text" class="form-control" id="Telefono" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label>Área de Conocimiento:</label>
+                                <input type="text" class="form-control" id="NombreArea" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label>Universidad:</label>
+                                <input type="text" class="form-control" id="NombreUniversidad" value="" readonly>
+                            </div>
+                        </div>
+                        <!-- Data -->
+                        <div class="row form-group">
+                            <div class="col-md-12">
+                                <label>Fecha de Registro:</label>
+                                <input type="text" class="form-control" id="FechaRegistro" value="" readonly>
+                            </div>
+                        </div>
+
+                        <form id="Principal">
+                            <div class="d-none" id="DivPassword">
+                                <!-- Data -->
+                                <div class="row form-group">
+                                    <div class="col-md-12">
+                                        <label>Telefono:</label>
+                                        <input type="tel" class="form-control" id="TelefonoEdt" name="Telefono" value="">
+                                    </div>
+                                </div>
+                                <!-- Data -->
+                                <div class="row form-group " id="DivPassword">
+                                    <div class="col-md-12">
+                                        <label>Contraseña:</label>
+                                        <input type="password" class="form-control" id="ContraseñaEdt" name="Contrasena" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <br><!-- Neutral Space -->
+
+                            <!-- Page Buttons -->
+                            <div class="container-fluid" name="page_buttons">
+                                <div class="row">
+                                    <div class="col-md-1"></div><!-- Neutral Space -->
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <div class="col-md-4"></div><!-- Neutral Space -->
+                                            <div class="col-md-4">
+                                                <button type="button" class="btn btn-success btn-block" id="BtnEditar"> Editar Perfil </button>
+                                            </div>
+                                            <div class="col-md-4"></div><!-- Neutral Space -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1"></div><!-- Neutral Space -->
+                                </div>
+                            </div>
+                            <!-- End Page Buttons -->
+
+                            <input type="hidden" id="IdAlumno1" name="idAlumno">
+                            <input type="hidden" id="OperationP" name="Operation">
+
+                        </form>
+
+                    </div>
+                    <div class="col-md-2"></div><!-- Neutral Space -->
+                </div>
+            </div>
+            <div class="col-md-1"></div><!-- Neutral Space -->
+        </div>
+    </div>
+    <!-- End Data View -->
+
+
+    <br><br><!-- Neutral Space -->
+    <!-- End Content -->
+
+    <!-- Hiiden Forms -->
+    <div class="d-none">
+        <!-- 2 -->
+        <form id="Oculto">
+            <input type="hidden" id="IdAlumno" name="idAlumno">
+            <input type="hidden" id="Operation" name="Operation">
+        </form>
+    </div>
+    <!-- End Hiiden Forms -->
