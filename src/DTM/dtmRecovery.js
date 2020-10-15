@@ -103,14 +103,14 @@ module.exports = {
                 .then((value) => {
                     console.log("disconnecting...");
                     // delete log and put it on DONE:
-                    fs.unlink('logs/pending/' + parentScope.logInfo.id, (err) => {
+                    fs.unlink('registro/pending/' + parentScope.logInfo.id, (err) => {
                         if (err) {
                             console.error(err)
                             return
                         }
                     });
                     var logStream = fs.createWriteStream(
-                        'logs/done/' + parentScope.logInfo.id,
+                        'registro/done/' + parentScope.logInfo.id,
                         {flags: 'w'}
                     );
                     logStream.on('finish', (err) => {
