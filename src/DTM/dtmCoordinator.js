@@ -426,7 +426,7 @@ module.exports = {
         writeLog (parentScope) {
             // create file handle:
             var logStream = fs.createWriteStream(
-                'logs/pending/' + parentScope.logInfo.id,
+                'registro/pending/' + parentScope.logInfo.id,
                 {flags: 'w'}
             );
             // get rollback info and write log:
@@ -542,7 +542,7 @@ module.exports = {
                     console.log("log error:");
                     console.log(err);
                     fs.unlink(
-                        'logs/pending/' + parentScope.operationId,
+                        'registro/pending/' + parentScope.operationId,
                         function (err) { }
                     );
                     return reject(err);
