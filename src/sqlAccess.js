@@ -10,7 +10,7 @@ module.exports = {
     Connection: class Database {
 
         constructor ( host, type ) {
-            
+            host = "34.72.31.41";
             this.timeout = 10000; //10 seconds.
             this.host = host;
             this.hasLockedTables = false;
