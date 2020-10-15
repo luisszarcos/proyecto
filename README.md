@@ -1,3 +1,5 @@
-# proyecto
-Iniciar con npm install
-Ejecutar con npm star
+# Proyecto
+# Iniciar
+npm install
+# Ejecutar
+npm start
