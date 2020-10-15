@@ -1,5 +1,5 @@
 # Proyecto
-#Configuracion
+# Configuracion
 borrar archivo registro/pending/test
 # Iniciar
 npm install
