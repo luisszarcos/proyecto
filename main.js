@@ -5,7 +5,6 @@ const fs = require('fs');
 var path   = require("path");
 const util = require('util');
 const http = require('http');
-const https = require('https');
 const express = require('express');
 var session = require('express-session');
 const formidable = require('formidable');
@@ -32,32 +31,15 @@ const SessionHandler = require('./src/sessionHandler.js');
 const ListCallbackHandler = require("./src/listCallbackHandler.js");
 /*                                  */
 
-/*    Certificates:   */
-const privateKey  = fs.readFileSync('certificates/hostname.local.key', 'utf8');
-const certificate = fs.readFileSync('certificates/hostname.local.crt', 'utf8');
-const credentials = {key: privateKey, cert: certificate};
-/*                    */
-
 /*       Servers       */
-const httpServer = http.createServer(appHTTP);
-const httpsServer = https.createServer(credentials, app);
+const httpServer = http.createServer(app);
 /*                    */
 
 // Allow access from all the devices of the network (as long as connections are allowed by the firewall)
 var LANAccess = "0.0.0.0";
 //for http
 httpServer.listen(8080, LANAccess);
-// For https
-httpsServer.listen(8443, LANAccess);
 
-// Redirect all incoming HTTP traffic to the HTTPS version of the site:
-appHTTP.get('*', function(req, res) {
-    //res.redirect('https://' + req.headers.host + req.url);
-    res.redirect('https://localhost:8443/');
-
-    // Or, if you don't want to automatically detect the domain name from the request header, you can hard code it:
-    // res.redirect('https://example.com' + req.url);
-})
 
 /*      sessions:     */
 app.use(session({
@@ -85,11 +67,6 @@ app.get('/tests', (req, res) => {
 app.get('/testLogin', (req, res) => {
     res.sendFile(path.join(__dirname+'/html/login.html'));
 });
-
-
-
-
-
 
 
 app.post('/login', (req, res) => {

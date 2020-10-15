@@ -4,10 +4,11 @@ const fs = require('fs');
 
 var crypto = require("crypto");
 
-const cert = {
+const cert = 1
+/*{
   key: fs.readFileSync('certificates/hostname.local.key', 'utf8'),
   cert: fs.readFileSync('certificates/hostname.local.crt', 'utf8')
-};
+};*/
 
 module.exports = {
 
@@ -74,14 +75,14 @@ module.exports = {
                 socket.broadcast.emit('disconnect');
             }
 
-            // create socket https server:
-            this.socketHttpsServer = require('https').createServer(
+            // create socket http server:
+            this.socketHttpServer = require('http').createServer(
                 cert
             );
 
             // create socket:
             this.coordinatorSocket = require('socket.io')(
-                this.socketHttpsServer
+                this.socketHttpServer
             );
 
             // set a callback to object scope inside 'coordinatorSocket':
@@ -105,7 +106,7 @@ module.exports = {
                         console.log(parentScope.lockClockForTimeoutActive);
                         if (parentScope.lockClockForTimeoutActive == true) {
                             parentScope.coordinatorSocket.close();
-                            parentScope.socketHttpsServer.close();
+                            parentScope.socketHttpServer.close();
                         }
                     }, 5000, parentScope);
 
@@ -329,7 +330,7 @@ module.exports = {
                 console.log("\n\n****\nMASTER TIMEOUT:");
                 console.log(true);
                 parentScope.coordinatorSocket.close();
-                parentScope.socketHttpsServer.close();
+                parentScope.socketHttpServer.close();
             }, 6000, this);
 
             // we make five attempts to lock tables. If we fail, we throw error.
@@ -550,11 +551,11 @@ module.exports = {
         }
         startServer (parentScope) {
             return new Promise((resolve, reject) => {
-                parentScope.socketHttpsServer.on('close', function() {
+                parentScope.socketHttpServer.on('close', function() {
                     console.log("server 'close' event fired.");
                     resolve(Errors.SUCCESS);
                 });
-                parentScope.socketHttpsServer.listen(parentScope.port);
+                parentScope.socketHttpServer.listen(parentScope.port);
                 // call for participants:
                 console.log("TARGETS FOR MASTER:");
                 console.log(parentScope.metadata.targets);
@@ -574,7 +575,7 @@ module.exports = {
             var parentScope = this;
             return new Promise((resolve, reject) => {
                 console.log("***STARTED NORMAL STOP.");
-                parentScope.socketHttpsServer.close();
+                parentScope.socketHttpServer.close();
                 parentScope.coordinatorSocket.close();
                 parentScope.database.endConnection().catch((err) => {
                     database.destroyConnection();

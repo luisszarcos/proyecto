@@ -7,21 +7,20 @@ const Errors = require("./../errors.js");
 var crypto = require("crypto");
 const fs = require('fs');
 
-const host = 'https://192.168.100.4';
+const host = 'http://localhost';
 
 const sites = [
-    'https://192.168.100.244',
-    'https://192.168.100.4'
+    'http://localhost',
 ];
 
 // create server:
-const socketServer = require('https').createServer({
-  key: fs.readFileSync('certificates/hostname.local.key', 'utf8'),
-  cert: fs.readFileSync('certificates/hostname.local.crt', 'utf8')
+const socketServer = require('http').createServer({
+  //key: fs.readFileSync('certificates/hostname.local.key', 'utf8'),
+  //cert: fs.readFileSync('certificates/hostname.local.crt', 'utf8')
 });
 socketServer.listen(9000);
 
-const cert = fs.readFileSync('certificates/hostname.local.crt', 'utf8');
+const cert = 1//fs.readFileSync('certificates/hostname.local.crt', 'utf8');
 
 
 // create pending log array. This is an array of 'logInfo' objects:

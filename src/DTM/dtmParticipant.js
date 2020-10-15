@@ -4,7 +4,7 @@ const Errors = require("./../errors.js");
 
 var crypto = require("crypto");
 
-const cert = fs.readFileSync('certificates/hostname.local.crt', 'utf8');
+const cert = 1//fs.readFileSync('certificates/hostname.local.crt', 'utf8');
 
 module.exports = {
 

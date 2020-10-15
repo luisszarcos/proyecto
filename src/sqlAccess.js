@@ -21,7 +21,7 @@ module.exports = {
                     this.connection = mysql.createConnection({
                         host: host,
                         user: "root",
-                        password: "password",
+                        password: "hola1234",
                         database: database,
                         insecureAuth : true,
                         acquireTimeout: 30000
@@ -32,7 +32,7 @@ module.exports = {
                     this.connection = mysql.createConnection({
                         host: host,
                         user: "root",
-                        password: "password",
+                        password: "hola1234",
                         database: database,
                         insecureAuth : true,
                         multipleStatements: true,
@@ -45,7 +45,7 @@ module.exports = {
                     this.connection = mysql.createConnection({
                         host: host,
                         user: "root",
-                        password: "password",
+                        password: "hola1234",
                         database: this.database,
                         insecureAuth : true,
                         acquireTimeout: 30000
