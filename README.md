@@ -1,10 +1,10 @@
 # Proyecto
 # Configuracion previa
 agregar directorios:
-/
-  logs
-    pending
-    done
+#/
+  #logs
+    #pending
+    #done
 # Iniciar
 npm install
 # Ejecutar
