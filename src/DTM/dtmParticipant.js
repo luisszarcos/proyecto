@@ -173,7 +173,7 @@ module.exports = {
 
                 // save log:
                 var logStream = fs.createWriteStream(
-                    'registro/pending/' + parentScope.logInfo.id,
+                    'logs/pending/' + parentScope.logInfo.id,
                     {flags: 'w'}
                 );
                 logStream.on('finish', (err) => {
@@ -342,7 +342,7 @@ module.exports = {
 
                 // create log:
                 var logStream = fs.createWriteStream(
-                    'registro/pending/' + parentScope.logInfo.id,
+                    'logs/pending/' + parentScope.logInfo.id,
                     {flags: 'w'}
                 );
                 logStream.end(
@@ -428,14 +428,14 @@ module.exports = {
                     // and disconnect:
                     parentScope.logInfo.state = '0';
                     // update log:
-                    fs.unlink('registro/pending/' + parentScope.logInfo.id, (err) => {
+                    fs.unlink('logs/pending/' + parentScope.logInfo.id, (err) => {
                         if (err) {
                             console.error(err)
                             return
                         }
                     });
                     var logStream = fs.createWriteStream(
-                        'registro/done/' + parentScope.logInfo.id,
+                        'logs/done/' + parentScope.logInfo.id,
                         {flags: 'w'}
                     );
                     logStream.end(
@@ -502,7 +502,7 @@ module.exports = {
                         console.log("***WRITING PENDING LOG...");
                         // save log:
                         var logStream = fs.createWriteStream(
-                            'registro/pending/' + parentScope.logInfo.id,
+                            'logs/pending/' + parentScope.logInfo.id,
                             {flags: 'w'}
                         );
                         logStream.on('finish', (err) => {

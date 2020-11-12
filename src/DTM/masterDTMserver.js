@@ -68,10 +68,10 @@ masterSocket.on('connection', function ( client ) {
             // check if we have the id operation on our DONE logs.
             // If so, serve it to the caller.
             var operationId = data.logInfo.id;
-            if (fs.existsSync('./registro/done/' + operationId)) {
+            if (fs.existsSync('./logs/done/' + operationId)) {
                 console.log("SOS LOG EXISTS...");
                 var response = fs.readFileSync(
-                    './registro/done/' + operationId,
+                    './logs/done/' + operationId,
                     'utf8'
                 );
                 response = JSON.parse(response);
@@ -152,9 +152,9 @@ masterSocket.on('connection', function ( client ) {
 
 
 // update the list at startup:
-fs.readdirSync('./registro/pending/').forEach( file => {
+fs.readdirSync('./logs/pending/').forEach( file => {
     // read contents:
-    var contents = fs.readFileSync('./registro/pending/' + file, 'utf8');
+    var contents = fs.readFileSync('./logs/pending/' + file, 'utf8');
     // append to array:
     pendingLogs.pendingLogs.push(JSON.parse(contents));
 });
